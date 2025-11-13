@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio | Sneha Talapatra</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Sneha Talapatra</div>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+      <nav id="nav" class="nav" aria-label="Main navigation">
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link home" href="../index.html" title="Back to Dashboard">🏠 Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Sneha Talapatra</h1>
+        <p class="lead">Front-end Developer — building elegant, accessible, and performant interfaces with HTML, CSS & JavaScript.</p>
+        <p class="hero-cta">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn btn-outline" href="#contact">Contact Me</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS (Carousel) -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="carousel" aria-roledescription="carousel">
+          <button class="carousel-btn prev" aria-label="Previous project">‹</button>
+
+          <div class="slides" id="slides" aria-live="polite">
+            <!-- Slide 1 -->
+            <article class="slide" data-index="0">
+              <div class="project-card">
+                <h3>To-Do / Notes App</h3>
+                <p>Feature-rich notes app with localStorage persistence, add/edit/delete and filtering options.</p>
+                <p class="meta">HTML • CSS • JavaScript</p>
+                <p><a class="project-link" href="../todo/index.html">Open Project</a></p>
+              </div>
+            </article>
+
+            <!-- Slide 2 -->
+            <article class="slide" data-index="1">
+              <div class="project-card">
+                <h3>Fashion Product Listing</h3>
+                <p>Responsive product grid with category filtering, price & rating sorting, and smooth UI interactions.</p>
+                <p class="meta">HTML • CSS • JavaScript</p>
+                <p><a class="project-link" href="../products/index.html">Open Project</a></p>
+              </div>
+            </article>
+
+            <!-- Slide 3 -->
+            <article class="slide" data-index="2">
+              <div class="project-card">
+                <h3>Portfolio Dashboard</h3>
+                <p>This multi-page professional suite acts as a launcher and documentation for the individual projects.</p>
+                <p class="meta">Design • UX • Integration</p>
+                <p><a class="project-link" href="../index.html">Back to Dashboard</a></p>
+              </div>
+            </article>
+          </div>
+
+          <button class="carousel-btn next" aria-label="Next project">›</button>
+
+          <div class="dots" id="dots" role="tablist" aria-label="Project slides"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-card">
+      <div class="container">
+        <h2>Contact</h2>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Send an Email</h3>
+            <form id="contact-form" class="contact-form" onsubmit="return false;">
+              <label>
+                <span class="label-text">Your name</span>
+                <input type="text" id="visitor-name" placeholder="Your name" required>
+              </label>
+
+              <label>
+                <span class="label-text">Your email</span>
+                <input type="email" id="visitor-email" placeholder="you@example.com" required>
+              </label>
+
+              <label>
+                <span class="label-text">Message</span>
+                <textarea id="visitor-message" rows="4" placeholder="Write a short message..." required></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button id="send-mail" class="btn">Send Message</button>
+                <span id="send-status" class="muted"></span>
+              </div>
+            </form>
+          </div>
+
+          <aside class="contact-info">
+            <h3>Other ways to reach me</h3>
+            <p>📧 <a href="mailto:sneha.talapatra@example.com">sneha.talapatra@example.com</a></p>
+            <p>📞 <a href="tel:+911234567890">+91 12345 67890</a></p>
+            <p>Or click <strong>Send Message</strong> to open your email client with a prefilled message to Sneha.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT (last) -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>Hi — I’m <strong>Sneha Talapatra</strong>. I enjoy designing and building accessible web interfaces using semantic HTML, modern CSS, and maintainable JavaScript. I focus on clarity, performance, and cross-device usability.</p>
+        <p>Tech: HTML5 • CSS3 • JavaScript (ES6+) • Responsive Design • Basic Accessibility</p>
+      </div>
+    </section>
+  </main>
+
+  
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2025 Sneha Talapatra • Built with HTML, CSS & JavaScript</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Listing | Sneha Talapatra</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Sneha’s Product Collection</h1>
+    <div class="cart">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <section class="controls">
+    <input type="text" id="search" placeholder="Search products..." />
+    <select id="filter">
+      <option value="all">All Categories</option>
+      <option value="skincare">Skincare</option>
+      <option value="makeup">Makeup</option>
+      <option value="accessory">Accessories</option>
+    </select>
+    <select id="sort">
+      <option value="default">Sort by</option>
+      <option value="price">Price (Low → High)</option>
+      <option value="rating">Rating (High → Low)</option>
+    </select>
+  </section>
+
+  <section class="product-list" id="product-list">
+    <!-- Products will be generated dynamically -->
+  </section>
+
+  <footer>
+    <p>© 2025 Sneha Talapatra | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
